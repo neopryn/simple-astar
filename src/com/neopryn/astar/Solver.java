@@ -50,7 +50,7 @@ public class Solver {
         var goalNodeX = goalNodeIndex % width;
 
         // Calculate heuristic for each node
-        nodeArray.parallelStream().forEach(n -> {
+        nodeArray.stream().forEach(n -> {
             if (n == null) {
                 return;
             }
